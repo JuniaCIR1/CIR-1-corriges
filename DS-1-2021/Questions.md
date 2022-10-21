@@ -40,23 +40,16 @@ Exemples de résultats attendus :
 int valoriser(short t[], int nbVal)
 
 {
-
     int compteur = 0;
 
     for(int i = 0; i < nbVal; i++)
-
     {
 
         if (t[i] < t[i+1])
-
         {
-
             t[i] += 1;
-
             compteur++;
-
         }
-
     }
 
     return compteur;

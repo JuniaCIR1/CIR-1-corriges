@@ -53,22 +53,23 @@ int main(void)
     char kar = 3;
     int pos = position(alphabetClair, kar);
     printf("\n%d\n", pos);
-    printf("Le texte en clair est : %s", texteClair);
+    printf("Le texte en clair est : %s\n", texteClair);
 
     for (int i = 0; i < TAILLE_MAX; i++)
     {
-        if (texteClair[i] == " ")
+        char space = ' ';
+        if (texteClair[i] == space)
         {
-            texteChiffre[i] = " ";
+            texteChiffre[i] = space;
         }
         else
         {
             int new_position = position(alphabetClair, texteClair[i]);
-            texteChiffre[i] = alphabetClair[new_position];
+            texteChiffre[i] = alphabetChiffre[new_position];
         }
     }
 
-    printf("Le texte chiffre est : %s", texteChiffre);
+    printf("Le texte chiffre est : %s\n", texteChiffre);
 
     system("pause");
 
