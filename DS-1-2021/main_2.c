@@ -65,6 +65,11 @@ int main(void)
         else
         {
             int new_position = position(alphabetClair, texteClair[i]);
+            if (new_position == -1)
+            {
+                printf("Le texte à chiffrer contient un caractère qui n’existe pas dans le tableau alphabetClair\n");
+                break;
+            }
             texteChiffre[i] = alphabetChiffre[new_position];
         }
     }

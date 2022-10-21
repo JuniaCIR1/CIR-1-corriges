@@ -114,9 +114,7 @@ Utilisez la fonction position dans votre programme.
 
 
 
-4) Modifiez le code précédent afin d’arrêter le programme et d’afficher un message d’erreur si le texte
-à chiffrer contient un caractère qui n’existe pas dans le tableau alphabetClair (autre que le caractère
-« espace » bien sûr).
+4) Modifiez le code précédent afin d’arrêter le programme et d’afficher un message d’erreur si le texte à chiffrer contient un caractère qui n’existe pas dans le tableau alphabetClair (autre que le caractère « espace » bien sûr).
 
 
 
