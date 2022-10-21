@@ -4,7 +4,7 @@
 
 1) Combien de cases le tableau tab comporte-t-il ?
 
-Le tableau tab contient *10* cases.
+Le tableau tab contient **10** cases.
 
 2) Donnez l’affichage des lignes 13,14 et 15.
 
