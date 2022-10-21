@@ -127,8 +127,3 @@ Utilisez la fonction position dans votre programme.
 
 
 
-
-
-### Questions 
-
-*Un short tab[10] contient 10 ou 20 cases ?*
