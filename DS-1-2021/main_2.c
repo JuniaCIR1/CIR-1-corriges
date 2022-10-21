@@ -39,7 +39,7 @@ int main(void)
 
     char alphabetClair[TAILLE];
     char alphabetChiffre[TAILLE] = "julescartvwxyzbdfghikmnopq";
-    char texteClair[TAILLE_MAX] = "bon courage";
+    char texteClair[TAILLE_MAX] = "bon coUrage";
     char texteChiffre[TAILLE_MAX];
 
     char valeur = 97;
@@ -70,7 +70,7 @@ int main(void)
             int new_position = position(alphabetClair, texteClair[i]);
             if (new_position == -1)
             {
-                printf("Le texte a chiffrer contient un caractere qui n’existe pas dans le tableau alphabetClair\n");
+                printf("Le texte a chiffrer contient un caractere qui n existe pas dans le tableau alphabetClair\n");
                 break;
             }
             texteChiffre[i] = alphabetChiffre[new_position];
