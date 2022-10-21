@@ -3,6 +3,7 @@
 #include <time.h>
 #include <math.h>
 #include <stdbool.h>
+#include <locale.h>
 #include "header.h"
 
 #define TAILLE 27
@@ -33,6 +34,8 @@ int position(char t[], char charactere)
 int main(void)
 {
     // make sure to write every variables and comments in english
+
+    setlocale(LC_ALL, "fr-FR"); // gestion des accents dans la console
 
     char alphabetClair[TAILLE];
     char alphabetChiffre[TAILLE] = "julescartvwxyzbdfghikmnopq";
@@ -67,7 +70,7 @@ int main(void)
             int new_position = position(alphabetClair, texteClair[i]);
             if (new_position == -1)
             {
-                printf("Le texte à chiffrer contient un caractère qui n’existe pas dans le tableau alphabetClair\n");
+                printf("Le texte a chiffrer contient un caractere qui n’existe pas dans le tableau alphabetClair\n");
                 break;
             }
             texteChiffre[i] = alphabetChiffre[new_position];
