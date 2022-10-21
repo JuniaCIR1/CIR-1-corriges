@@ -104,7 +104,7 @@ int position(char t[], char charactere)
 
 
 3) Donnez le code permettant de faire le chiffrement d’une chaine de caractères en substituant chaque caractère par son correspondant dans le tableau alphabetChiffre, sachant que le caractère « espace » reste inchangeable. Nous supposons que le texte à chiffrer ne contient que des caractères de « a » à « z » et des espaces. 
-	Utilisez la fonction position dans votre programme.
+4Utilisez la fonction position dans votre programme.
 
 ```c
     printf("Le texte en clair est : %s\n", texteClair);  
@@ -130,23 +130,23 @@ int position(char t[], char charactere)
 4) Modifiez le code précédent afin d’arrêter le programme et d’afficher un message d’erreur si le texte à chiffrer contient un caractère qui n’existe pas dans le tableau alphabetClair (autre que le caractère « espace » bien sûr).
 
 ```c    
-	for (int i = 0; i < TAILLE_MAX; i++)
+for (int i = 0; i < TAILLE_MAX; i++)
+{
+	char space = ' ';
+	if (texteClair[i] == space)
+	{
+		texteChiffre[i] = space;
+	}
+	else
+	{
+		int new_position = position(alphabetClair, texteClair[i]);
+		if (new_position == -1)
 	    {
-	        char space = ' ';
-	        if (texteClair[i] == space)
-	        {
-	            texteChiffre[i] = space;
-	        }
-	        else
-	        {
-	            int new_position = position(alphabetClair, texteClair[i]);
-	            if (new_position == -1)
-	            {
-	                printf("Le texte a chiffrer contient un caractere qui n existe pas dans le tableau alphabetClair\n");
-	                break;
-	            }
-	            texteChiffre[i] = alphabetChiffre[new_position];
-	        }
+	    printf("Le texte a chiffrer contient un caractere qui n existe pas dans le tableau alphabetClair\n");
+	    break;
 	    }
+		texteChiffre[i] = alphabetChiffre[new_position];
+	}
+}
 ```
 
